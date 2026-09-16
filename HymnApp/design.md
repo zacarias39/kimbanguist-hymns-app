@@ -1,0 +1,1 @@
+hymnal mobile app for Igreja Kimbanguista, user should be able to read the songs, play the songs, search, add to their favorites
