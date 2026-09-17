@@ -1,0 +1,297 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#0a1612;color:#f5f3ec;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.font-lora{font-family:'Lora',serif;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "on-primary-container": "#799d8b",
+        "primary": "#a9cfbb",
+        "surface-variant": "#2b3733",
+        "surface-container-low": "#121e1a",
+        "outline-strong": "rgba(229, 184, 92, 0.28)",
+        "surface-container-high": "#202c28",
+        "accent-gold": "#e5b85c",
+        "tertiary-fixed": "#caead8",
+        "secondary-container": "#7d5b00",
+        "on-tertiary-fixed": "#042016",
+        "on-tertiary-fixed-variant": "#314c40",
+        "primary-fixed-dim": "#a9cfbb",
+        "error": "#ffb4ab",
+        "on-background": "#d8e6df",
+        "surface-bright": "#2f3c37",
+        "on-primary-fixed": "#002115",
+        "primary-fixed": "#c5ebd6",
+        "on-primary-fixed-variant": "#2b4d3e",
+        "primary-container": "#113426",
+        "on-surface": "#f5f3ec",
+        "accent-gold-subtle": "#8a6e30",
+        "secondary-fixed": "#ffdea3",
+        "tertiary-container": "#183328",
+        "tertiary": "#afcebd",
+        "tertiary-fixed-dim": "#afcebd",
+        "background": "#0a1612",
+        "surface": "#0a1612",
+        "on-primary": "#143728",
+        "on-secondary-fixed": "#261900",
+        "inverse-primary": "#436555",
+        "text-muted": "#7e8881",
+        "inverse-surface": "#d8e6df",
+        "on-tertiary-container": "#7e9c8d",
+        "outline-subtle": "rgba(229, 184, 92, 0.12)",
+        "inverse-on-surface": "#27332e",
+        "secondary": "#eec063",
+        "surface-raised": "#0d1e18",
+        "accent-gold-deep": "#d4af37",
+        "surface-container": "#16221e",
+        "text-primary": "#f5f1e8",
+        "surface-dim": "#0a1612",
+        "surface-container-lowest": "#05100d",
+        "on-secondary": "#402d00",
+        "surface-overlay": "#132a22",
+        "on-surface-variant": "#9eada3",
+        "on-secondary-fixed-variant": "#5c4200",
+        "secondary-fixed-dim": "#eec063",
+        "surface-tint": "#a9cfbb",
+        "surface-container-highest": "#2b3733",
+        "error-container": "#93000a",
+        "on-error": "#690005",
+        "on-error-container": "#ffdad6",
+        "outline-variant": "#414844",
+        "surface-highlight": "#19382d",
+        "on-tertiary": "#1a362a",
+        "text-secondary": "#c8c2b5",
+        "outline": "#8b928d",
+        "surface-base": "#0a1612",
+        "on-secondary-container": "#ffd78a"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.25rem",
+        "lg": "0.5rem",
+        "xl": "0.75rem",
+        "full": "9999px"
+      },
+      "spacing": {
+        "space-md": "1rem",
+        "gutter": "1rem",
+        "space-xl": "2.25rem",
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "margin": "1.25rem",
+        "space-lg": "1.5rem"
+      },
+      "fontFamily": {
+        "headline-lg-mobile": ["Montserrat", "sans-serif"],
+        "display-lg": ["Newsreader", "serif"],
+        "headline-lg": ["Montserrat", "sans-serif"],
+        "lyric-display-mobile": ["Lora", "Newsreader", "serif"],
+        "body-md": ["Montserrat", "sans-serif"],
+        "body-lg": ["Newsreader", "serif"],
+        "label-md": ["Montserrat", "sans-serif"],
+        "label-sm": ["Montserrat", "sans-serif"],
+        "lyric-display": ["Lora", "Newsreader", "serif"],
+        "headline-md": ["Montserrat", "sans-serif"]
+      },
+      "fontSize": {
+        "headline-lg-mobile": ["22px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+        "display-lg": ["38px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+        "headline-lg": ["26px", {"lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+        "lyric-display-mobile": ["18px", {"lineHeight": "29px", "fontWeight": "400"}],
+        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+        "body-lg": ["17px", {"lineHeight": "27px", "fontWeight": "400"}],
+        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600"}],
+        "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500"}],
+        "lyric-display": ["21px", {"lineHeight": "34px", "fontWeight": "400"}],
+        "headline-md": ["18px", {"lineHeight": "24px", "fontWeight": "600"}]
+      }
+    }
+  }
+}</script></head><body class="bg-[#0a1612] font-body-md text-body-md text-[#f5f3ec] flex flex-col antialiased selection:bg-[#e5b85c] selection:text-[#082017] min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-[#0d1e18]/95 backdrop-blur-xl border-b border-[#1b3b2e]/60 shadow-[0_4px_20px_rgba(0,0,0,0.5)] pt-safe"><div class="h-16 px-space-sm flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 rounded-full flex items-center justify-center text-[#a9cfbb] hover:bg-[#163328] transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div class="w-8 h-8 rounded-lg bg-[#143729] flex items-center justify-center text-[#a9cfbb] shadow-sm"><span class="material-symbols-outlined text-[20px]">menu_book</span></div><h1 class="font-headline-md text-headline-md tracking-tight text-[#f5f3ec] ml-1 truncate max-w-[170px]">Hymn Reader</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Bookmark" class="w-11 h-11 rounded-full flex items-center justify-center text-[#9eada3] hover:text-[#eec063] hover:bg-[#163328] transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark_border</span></button><div class="w-8 h-8 rounded-full bg-[#1b4333] flex items-center justify-center text-[#a9cfbb]"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 min-h-screen bg-[#0a1612] px-margin pb-safe"><div class="flex flex-col w-full pb-28">
+<!-- Hymn Metadata & Title Card -->
+<div class="flex flex-col gap-space-sm pt-space-xs mb-space-md"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="bg-[#143729] text-[#e5b85c] font-label-md text-label-md px-3 py-1 rounded-full font-bold tracking-wider">104</span><span class="text-[#414844] text-[12px]">•</span><span class="text-[#a9cfbb] font-label-sm text-label-sm uppercase tracking-widest font-semibold">REASSURANCE &amp; SALVATION</span></div><button aria-label="Favorite Hymn" class="w-10 h-10 rounded-full bg-[#12251e] flex items-center justify-center text-[#e5b85c] transition-transform active:scale-90 hover:bg-[#163328]" id="favBtn" onclick="toggleFavorite()"><span class="material-symbols-outlined text-[22px]" id="favIcon" style="font-variation-settings: 'FILL' 1;">star</span></button></div><div><h2 class="font-headline-lg-mobile text-headline-lg-mobile text-[#f5f3ec] tracking-tight font-bold">Amazing Grace</h2><p class="font-body-md text-body-md text-[#9eada3] mt-0.5">John Newton (1779) • Tune: NEW BRITAIN (CM)</p></div><div class="flex items-center gap-2 pt-1"><span class="bg-[#12251e] text-[#a9cfbb] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">Key of G Major</span><span class="bg-[#12251e] text-[#9eada3] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">3/4 Time</span><span class="bg-[#12251e] text-[#9eada3] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">Meter: 8.6.8.6</span></div></div>
+<!-- Audio Tune & Reader Utility Ribbon -->
+<div class="bg-[#082017] text-white rounded-2xl p-4 shadow-2xl flex flex-col gap-3 mb-space-lg relative overflow-hidden selection:bg-[#c6942b] selection:text-[#082017]" id="audioPlayerCard"><div class="absolute -top-16 -right-16 w-36 h-36 bg-[#18533e]/30 rounded-full blur-2xl pointer-events-none"></div><div class="flex flex-col items-center text-center pt-1"><div class="flex items-center gap-1.5 text-[#e5b85c] font-label-sm text-[11px] font-semibold uppercase tracking-wider mb-1"><span class="material-symbols-outlined text-[15px]">library_music</span><span class="">SACRED RECORDING</span></div><h3 class="font-display-lg text-[20px] font-semibold text-white tracking-wide leading-tight">Nkunga Wa Simon Kimbangu</h3><p class="font-body-md text-[11px] text-emerald-200/70 mt-1 leading-snug px-2">Grande Coro da Paróquia Central &amp; Fanfarra • Nkamba Nova Jerusalém</p></div><div class="grid grid-cols-3 gap-1.5 bg-[#051710]/90 p-1 rounded-xl mt-1"><button class="flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg bg-[#144733] text-emerald-100 font-label-sm text-[12px] font-semibold shadow-sm transition-all"><span class="material-symbols-outlined text-[15px]">groups</span><span class="">Coro</span></button><button class="flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-emerald-200/60 hover:text-emerald-100 hover:bg-[#0c2b1f] font-label-sm text-[12px] font-medium transition-all"><span class="material-symbols-outlined text-[15px]">music_note</span><span class="">FAKI</span></button><button class="flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-lg text-emerald-200/60 hover:text-emerald-100 hover:bg-[#0c2b1f] font-label-sm text-[12px] font-medium transition-all"><span class="material-symbols-outlined text-[15px]">piano</span><span class="">Órgão</span></button></div><div class="flex items-center justify-between text-[11px] font-label-sm px-2 text-emerald-200/50 pt-1.5"><span class="text-[#e5b85c] font-semibold flex flex-col items-center">Estr. 1<span class="w-1.5 h-1.5 rounded-full bg-[#e5b85c] mt-0.5"></span></span><span class="hover:text-emerald-100 cursor-pointer">Refrão</span><span class="hover:text-emerald-100 cursor-pointer">Estr. 2</span><span class="hover:text-emerald-100 cursor-pointer">Refrão</span><span class="hover:text-emerald-100 cursor-pointer">Coda</span></div><div class="flex flex-col gap-1"><div class="w-full h-1.5 bg-[#143729] rounded-full relative cursor-pointer flex items-center shadow-inner" onclick="seekAudio(event)"><div class="h-full bg-gradient-to-r from-[#ffd978] to-[#e5b33d] rounded-full relative shadow-[0_0_8px_rgba(229,179,61,0.5)]" style="width: 52%;"><div class="absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-gradient-to-b from-[#ffea9f] to-[#d8a12d] shadow-[0_0_10px_rgba(255,220,120,0.8)]"></div></div></div><div class="flex items-center justify-between font-label-sm text-[11px] text-emerald-200/60 px-0.5 mt-0.5"><span class="font-semibold text-emerald-100/90 tracking-wider" id="audioCurrentTime">01:14</span><span class="font-medium tracking-wider">03:28</span></div></div><div class="flex items-center justify-between px-2 pt-1 pb-1"><button aria-label="Shuffle" class="text-emerald-200/60 hover:text-emerald-100 transition-colors p-1 active:scale-95"><span class="material-symbols-outlined text-[20px]">shuffle</span></button><button aria-label="Rewind 10s" class="text-emerald-200/80 hover:text-emerald-100 transition-colors p-1 active:scale-95"><span class="material-symbols-outlined text-[23px]">replay_10</span></button><button aria-label="Play or Pause" class="w-14 h-14 rounded-full bg-gradient-to-b from-[#e8be52] via-[#cfa035] to-[#aa7d1b] text-[#142616] flex items-center justify-center shadow-[0_0_24px_rgba(214,166,55,0.45),inset_0_1px_1px_rgba(255,255,255,0.6)] hover:brightness-105 active:scale-95 transition-all" id="playBtn" onclick="togglePlay()"><span class="material-symbols-outlined text-[30px] font-bold text-[#142616]" id="playIcon" style="font-variation-settings: 'FILL' 1;">pause</span></button><button aria-label="Forward 10s" class="text-emerald-200/80 hover:text-emerald-100 transition-colors p-1 active:scale-95"><span class="material-symbols-outlined text-[23px]">forward_10</span></button><button aria-label="Repeat" class="text-emerald-200/60 hover:text-emerald-100 transition-colors p-1 active:scale-95"><span class="material-symbols-outlined text-[20px]">repeat</span></button></div><div class="flex items-center justify-between pt-2"><div class="flex items-center bg-[#051710]/90 p-0.5 rounded-lg"><button class="px-2 py-1 rounded text-[11px] font-label-sm font-medium text-emerald-200/60 hover:text-emerald-100 transition-colors" onclick="showToast('Speed: 0.75x')">0.75x</button><button class="px-2 py-1 rounded text-[11px] font-label-sm font-bold bg-[#8f6b15] text-[#ffea9f] shadow-xs transition-colors" id="playerSpeedLabel" onclick="cycleSpeed()">1.0x</button><button class="px-2 py-1 rounded text-[11px] font-label-sm font-medium text-emerald-200/60 hover:text-emerald-100 transition-colors" onclick="showToast('Speed: 1.25x')">1.25x</button></div><div class="flex items-center gap-1.5"><button class="flex items-center gap-1.5 py-1 px-3 rounded-lg bg-[#0e3424] hover:bg-[#13432f] text-emerald-100 text-[11px] font-label-sm font-medium transition-all active:scale-95"><span class="material-symbols-outlined text-[15px] text-emerald-200/80">subtitles</span><span class="">Letra</span></button><button class="flex items-center gap-1.5 py-1 px-3 rounded-lg bg-[#0e3424] hover:bg-[#13432f] text-emerald-100 text-[11px] font-label-sm font-medium transition-all active:scale-95" onclick="toggleSheetMusic()"><span class="material-symbols-outlined text-[15px] text-emerald-200/80">queue_music</span><span class="">Pauta</span></button></div></div></div>
+<!-- Liturgical Illumination Ambient Visual -->
+<div class="relative w-full rounded-2xl overflow-hidden mb-space-lg p-5 shadow-2xl bg-[#0a1b16] group border border-[#2d684f]">
+  <img src="https://lh3.googleusercontent.com/aida/AEtjO1XCbtV2_lK7qZ8f9VKOZxntav5pu3XFYJGk5AI_sHmGU8EP-gtIvuG6Q1_k0uJ-GzFvWOD6wc5OmrNdZ8qm7sCCHs53g7DBOYimyGl67WFtvWxQG7A-V-67tMTWESgfH4NPWNvo-Sj-xBaheyFjjZ8b46QJQQxY3_DtLF4_FPVaK2J8SCDJZTMwMNY9ReV7sSSA4ohRHn9UW4ZfGJqrS2Tq1Jy_O1rj8QH1Rao1CvN-JCGjMCxM8qvEAaF6" alt="Liturgical Scripture Background" class="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#081e17]/95 via-[#0d261e]/85 to-[#081e17]/90 pointer-events-none"></div>
+  <div class="relative z-10 flex flex-col gap-2.5">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-[17px] text-[#e5b85c]">format_quote</span>
+        <span class="font-label-sm text-[11px] uppercase tracking-wider text-[#a9cfbb] font-semibold">Scripture Reference</span>
+        <span class="text-[#414844] text-[11px]">•</span>
+        <span class="font-label-sm text-[11px] text-[#e5b85c] font-semibold tracking-wide">Ephesians 2:8</span>
+      </div>
+      <span class="w-2 h-2 rounded-full bg-[#e5b85c]/80 shadow-[0_0_8px_rgba(229,184,92,0.6)]"></span>
+    </div>
+    <p class="font-lora text-[16px] italic leading-relaxed text-[#f5f3ec] pr-1">
+      “For by grace you have been saved through faith. And this is not your own doing; it is the gift of God.”
+    </p>
+    
+  </div>
+</div>
+<!-- Primary Sacred Lyric Paper Sheet -->
+<div class="flex items-center justify-between bg-[#12251e] rounded-xl px-space-md py-2.5 mb-space-md shadow-md transition-all" id="audioSyncStatusPill"><div class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-full bg-[#1b4333] flex items-center justify-center text-[#a9cfbb] flex-shrink-0 shadow-[0_0_10px_rgba(169,207,187,0.3)]"><span class="material-symbols-outlined text-[16px] animate-pulse text-[#e5b85c]">graphic_eq</span></div><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-label-sm text-[12px] font-bold text-[#a9cfbb]">Synchronized Audio</span><span class="text-[#414844]">•</span><span class="font-label-sm text-[11px] text-[#9eada3] font-medium">Stanza 1 of 4</span></div><span class="font-label-sm text-[11px] text-[#7e8881]">Following along with choir recording</span></div></div><div class="flex items-center gap-1 text-[#e5b85c] font-label-sm text-[11px] font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-[#e5b85c] animate-pulse"></span><span class="">Live</span></div></div><div class="bg-[#11231c] rounded-2xl p-space-lg shadow-[0_4px_24px_rgba(0,0,0,0.5)] border relative overflow-hidden border-transparent">
+<!-- Decorative Subtle Watermark Header Glyph -->
+<div class="absolute top-2 right-3 pointer-events-none opacity-5 text-[#a9cfbb]">
+<span class="material-symbols-outlined text-[90px]">church</span>
+</div>
+<!-- Dynamic Lyrics Container -->
+<div class="flex flex-col space-y-space-xl transition-all duration-200" id="lyricsContainer"><article class="flex gap-space-sm group relative pl-3.5 border-l-[3px] border-[#e5b85c] bg-[#162d24]/60 rounded-r-xl py-2.5 -ml-3.5 pr-2 transition-all duration-300 shadow-[inset_0_1px_3px_rgba(0,0,0,0.3)]" id="stanza-1"><div class="flex flex-col items-center pt-1 select-none flex-shrink-0 w-6"><span class="font-label-md text-label-md text-[#e5b85c] font-bold">1</span><span class="material-symbols-outlined text-[#e5b85c] text-[15px] animate-pulse mt-1">graphic_eq</span></div><div class="lyric-stanza font-lora text-[18px] text-[#f5f3ec] leading-[1.6] flex-1"><p class="stanza-line text-[#9eada3] py-0.5 transition-colors">Amazing grace! How sweet the sound</p><p class="stanza-line text-[#9eada3] py-0.5 transition-colors">That saved a wretch like me!</p><div class="stanza-line active-singing-line bg-[#1b4d3e] text-[#f5f3ec] font-medium px-3 py-1.5 -mx-2 rounded-lg flex items-center justify-between transition-all duration-300 shadow-md border-l-2 border-[#e5b85c] my-1"><div class="flex items-center gap-2"><span class="w-1 h-3.5 bg-[#e5b85c] rounded-full"></span><span class="tracking-wide text-white font-medium">I once was lost, but now am found;</span></div><span class="material-symbols-outlined text-[#e5b85c] text-[16px]">volume_up</span></div><p class="stanza-line text-[#d8e6df] py-0.5 transition-colors mt-0.5">Was blind, but now I see.</p></div></article><article class="flex gap-space-sm group relative pl-3.5 border-l-[3px] border-transparent hover:border-[#e5b85c]/50 rounded-r-xl py-1.5 -ml-3.5 pr-2 transition-all duration-300 opacity-85" id="stanza-2"><span class="font-label-md text-label-md text-[#e5b85c] font-bold w-6 pt-1 select-none flex-shrink-0">2</span><div class="lyric-stanza font-lora text-[18px] text-[#f5f3ec] leading-[1.6] flex-1"><p class="stanza-line py-0.5 text-[#e1dbcf]">’Twas grace that taught my heart to fear,</p><p class="stanza-line py-0.5 text-[#e1dbcf]">And grace my fears relieved;</p><p class="stanza-line py-0.5 text-[#e1dbcf]">How precious did that grace appear</p><p class="stanza-line py-0.5 text-[#e1dbcf]">The hour I first believed!</p></div></article><article class="flex gap-space-sm group relative pl-3.5 border-l-[3px] border-transparent hover:border-[#e5b85c]/50 rounded-r-xl py-1.5 -ml-3.5 pr-2 transition-all duration-300 opacity-80" id="stanza-3"><span class="font-label-md text-label-md text-[#e5b85c] font-bold w-6 pt-1 select-none flex-shrink-0">3</span><div class="lyric-stanza font-lora text-[18px] text-[#f5f3ec] leading-[1.6] flex-1"><p class="stanza-line py-0.5 text-[#d8d2c4]">Through many dangers, toils, and snares,</p><p class="stanza-line py-0.5 text-[#d8d2c4]">I have already come;</p><p class="stanza-line py-0.5 text-[#d8d2c4]">’Tis grace hath brought me safe thus far,</p><p class="stanza-line py-0.5 text-[#d8d2c4]">And grace will lead me home.</p></div></article><article class="flex gap-space-sm group relative pl-3.5 border-l-[3px] border-transparent hover:border-[#e5b85c]/50 rounded-r-xl py-1.5 -ml-3.5 pr-2 transition-all duration-300 opacity-80" id="stanza-4"><span class="font-label-md text-label-md text-[#e5b85c] font-bold w-6 pt-1 select-none flex-shrink-0">4</span><div class="lyric-stanza font-lora text-[18px] text-[#f5f3ec] leading-[1.6] flex-1"><p class="stanza-line py-0.5 text-[#d8d2c4]">When we’ve been there ten thousand years,</p><p class="stanza-line py-0.5 text-[#d8d2c4]">Bright shining as the sun,</p><p class="stanza-line py-0.5 text-[#d8d2c4]">We’ve no less days to sing God’s praise</p><p class="stanza-line py-0.5 text-[#d8d2c4]">Than when we’d first begun.</p></div></article></div>
+<!-- Sacred Doxological Flourish Divider -->
+<div class="flex items-center justify-center gap-3 pt-space-xl pb-space-sm text-[#a9cfbb]"><span class="h-px w-10 bg-[#1b4333]"></span><span class="material-symbols-outlined text-[18px] text-[#a9cfbb]">auto_awesome</span><span class="font-display-lg text-[16px] italic tracking-wider text-[#f5f3ec]">Amen</span><span class="material-symbols-outlined text-[18px] text-[#a9cfbb]">auto_awesome</span><span class="h-px w-10 bg-[#1b4333]"></span></div>
+</div>
+<!-- Historical Context Snippet Accordion / Callout -->
+<div class="mt-space-md bg-[#14261f] rounded-xl p-space-md flex flex-col gap-space-xs shadow-md"><div class="flex items-center justify-between cursor-pointer" onclick="toggleContext()"><div class="flex items-center gap-2 text-[#a9cfbb]"><span class="material-symbols-outlined text-[20px] text-[#e5b85c]">auto_stories</span><span class="font-label-md text-label-md font-semibold text-[#f5f3ec]">Historical Note</span></div><span class="material-symbols-outlined text-[20px] text-[#9eada3] transition-transform" id="contextChevron">expand_more</span></div><p class="font-body-md text-body-md text-[#9eada3] hidden pt-2 leading-relaxed mt-2" id="contextBody">Written in Olney, England, by curate John Newton following his dramatic deliverance from a life at sea and deep personal renewal. First published in the famous <em class="text-[#e5b85c]">Olney Hymns</em> (1779).</p></div>
+<!-- Quick Liturgical Actions Panel -->
+<div class="grid grid-cols-3 gap-space-xs mt-space-md mb-space-lg"><button class="bg-[#12221b] hover:bg-[#193328] py-2.5 px-2 rounded-xl flex flex-col items-center justify-center gap-1 text-[#f5f3ec] active:scale-95 transition-all shadow-sm" onclick="toggleSheetMusic()"><span class="material-symbols-outlined text-[#a9cfbb] text-[22px]">music_note</span><span class="font-label-sm text-label-sm font-medium">Sheet Music</span></button><button class="bg-[#12221b] hover:bg-[#193328] py-2.5 px-2 rounded-xl flex flex-col items-center justify-center gap-1 text-[#f5f3ec] active:scale-95 transition-all shadow-sm" id="focusBtn" onclick="toggleFocusMode()"><span class="material-symbols-outlined text-[#e5b85c] text-[22px]">center_focus_strong</span><span class="font-label-sm text-label-sm font-medium">Focus Sing</span></button><button class="bg-[#12221b] hover:bg-[#193328] py-2.5 px-2 rounded-xl flex flex-col items-center justify-center gap-1 text-[#f5f3ec] active:scale-95 transition-all shadow-sm" onclick="shareHymn()"><span class="material-symbols-outlined text-[#a9cfbb] text-[22px]">share</span><span class="font-label-sm text-label-sm font-medium">Share Lyrics</span></button></div>
+<!-- Sheet Music Modal Overlay Simulation -->
+<div class="hidden bg-[#11231c] border border-[#224436]/80 rounded-xl p-space-md shadow-2xl mb-space-lg flex flex-col gap-space-sm" id="sheetMusicCard"><div class="flex items-center justify-between"><div class="flex items-center gap-2"><span class="bg-[#143729] text-[#e5b85c] font-label-md text-label-md px-3 py-1 rounded-full font-bold tracking-wider">104</span><span class="text-[#414844] text-[12px]">•</span><span class="text-[#a9cfbb] font-label-sm text-label-sm uppercase tracking-widest font-semibold">REASSURANCE &amp; SALVATION</span></div><button aria-label="Favorite Hymn" class="w-10 h-10 rounded-full bg-[#12251e] flex items-center justify-center text-[#e5b85c] transition-transform active:scale-90 hover:bg-[#163328]" id="favBtn" onclick="toggleFavorite()"><span class="material-symbols-outlined text-[22px]" id="favIcon" style="font-variation-settings: 'FILL' 1;">star</span></button></div><div><h2 class="font-headline-lg-mobile text-headline-lg-mobile text-[#f5f3ec] tracking-tight font-bold">Amazing Grace</h2><p class="font-body-md text-body-md text-[#9eada3] mt-0.5">John Newton (1779) • Tune: NEW BRITAIN (CM)</p></div><div class="flex items-center gap-2 pt-1"><span class="bg-[#12251e] text-[#a9cfbb] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">Key of G Major</span><span class="bg-[#12251e] text-[#9eada3] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">3/4 Time</span><span class="bg-[#12251e] text-[#9eada3] font-label-sm text-[12px] px-2.5 py-1 rounded-full font-medium">Meter: 8.6.8.6</span></div></div>
+<!-- Floating Toast Notification for Interactions -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 bg-[#163328] text-[#f5f3ec] border border-[#2d684f] font-label-md text-label-md px-4 py-2 rounded-full shadow-2xl opacity-0 transition-opacity duration-300 pointer-events-none z-40 flex items-center gap-2" id="toast">
+<span class="material-symbols-outlined text-[16px] text-[#e5b85c]">check_circle</span>
+<span class="" id="toastMsg">Action completed</span>
+</div>
+<!-- Persistent Floating Liturgical Navigation Bar -->
+<nav aria-label="Liturgical Quick Nav" class="fixed bottom-6 inset-x-0 mx-auto w-fit z-50 flex items-center justify-center"><div class="bg-[#0f1f1a]/95 backdrop-blur-md px-6 py-2.5 rounded-full flex items-center gap-8 shadow-[0_8px_32px_rgba(0,0,0,0.6)]"><button aria-label="Library Index" class="flex flex-col items-center gap-0.5 text-[#9eada3] hover:text-[#a9cfbb] transition-colors py-1 px-2" onclick="navToast('Navigating to Hymn Library...')"><span class="material-symbols-outlined text-[22px]">menu_book</span><span class="font-label-sm text-label-sm">Library</span></button><button aria-label="Favorite Hymns" class="flex flex-col items-center gap-0.5 text-[#e5b85c] font-semibold py-1 px-2 relative" onclick="navToast('Opening Favorites Collection...')"><span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">star</span><span class="font-label-sm text-label-sm">Favorites</span><span class="absolute -top-0.5 right-2 w-1.5 h-1.5 rounded-full bg-[#e5b85c]"></span></button><button aria-label="Topical Index Search" class="flex flex-col items-center gap-0.5 text-[#9eada3] hover:text-[#a9cfbb] transition-colors py-1 px-2" onclick="navToast('Topical &amp; Scriptural Search...')"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-label-sm text-label-sm">Search</span></button></div></nav>
+</div>
+<script>
+  let isPlaying = false;
+  let isFavorite = true;
+  let playInterval = null;
+  let playSeconds = 74; // starts at 01:14
+  const totalSeconds = 208; // 03:28
+  const speeds = ['0.75x', '1.0x', '1.25x'];
+  let currentSpeedIdx = 1;
+
+  function togglePlay() {
+    isPlaying = !isPlaying;
+    const playIcon = document.getElementById('playIcon');
+    const playBtn = document.getElementById('playBtn');
+
+    if (isPlaying) {
+      playIcon.textContent = 'pause';
+      showToast('Playing: Nkunga Wa Simon Kimbangu');
+      playInterval = setInterval(() => {
+        if (playSeconds < totalSeconds) {
+          playSeconds++;
+          updateAudioDisplay();
+        } else {
+          togglePlay();
+        }
+      }, 1000);
+    } else {
+      playIcon.textContent = 'play_arrow';
+      clearInterval(playInterval);
+      showToast('Playback paused');
+    }
+  }
+
+  function updateAudioDisplay() {
+    const mins = Math.floor(playSeconds / 60);
+    const secs = String(playSeconds % 60).padStart(2, '0');
+    const timeDisplay = document.getElementById('audioCurrentTime');
+    if (timeDisplay) {
+      timeDisplay.textContent = `${mins.toString().padStart(2, '0')}:${secs}`;
+    }
+  }
+
+  function seekAudio(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const clickX = event.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+    playSeconds = Math.floor(ratio * totalSeconds);
+    const fillEl = event.currentTarget.firstElementChild;
+    if (fillEl) fillEl.style.width = `${ratio * 100}%`;
+    updateAudioDisplay();
+  }
+
+  function cycleSpeed() {
+    currentSpeedIdx = (currentSpeedIdx + 1) % speeds.length;
+    document.getElementById('playerSpeedLabel').textContent = speeds[currentSpeedIdx];
+    showToast(`Speed: ${speeds[currentSpeedIdx]}`);
+  }
+
+  function toggleFavorite() {
+    isFavorite = !isFavorite;
+    const favIcon = document.getElementById('favIcon');
+    const favBtn = document.getElementById('favBtn');
+    if (isFavorite) {
+      favIcon.style.fontVariationSettings = "'FILL' 1";
+      favBtn.classList.add('text-[#e5b85c]');
+      favBtn.classList.remove('text-[#9eada3]');
+      showToast('Saved to Personal Devotional Hymns');
+    } else {
+      favIcon.style.fontVariationSettings = "'FILL' 0";
+      favBtn.classList.remove('text-[#e5b85c]');
+      favBtn.classList.add('text-[#9eada3]');
+      showToast('Removed from Favorites');
+    }
+  }
+
+  function toggleContext() {
+    const body = document.getElementById('contextBody');
+    const chevron = document.getElementById('contextChevron');
+    const isHidden = body.classList.contains('hidden');
+    if (isHidden) {
+      body.classList.remove('hidden');
+      chevron.classList.add('rotate-180');
+    } else {
+      body.classList.add('hidden');
+      chevron.classList.remove('rotate-180');
+    }
+  }
+
+  function toggleSheetMusic() {
+    const card = document.getElementById('sheetMusicCard');
+    if (card.classList.contains('hidden')) {
+      card.classList.remove('hidden');
+      card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      showToast('Sheet music viewer loaded');
+    } else {
+      card.classList.add('hidden');
+    }
+  }
+
+  let focusSingActive = false;
+  function toggleFocusMode() {
+    focusSingActive = !focusSingActive;
+    const articles = document.querySelectorAll('#lyricsContainer article');
+    if (focusSingActive) {
+      articles.forEach((art, idx) => {
+        if (idx !== 0) art.style.opacity = '0.25';
+      });
+      showToast('Focus Sing mode active: Stanza 1');
+    } else {
+      articles.forEach((art, idx) => {
+        art.style.opacity = idx === 0 ? '1' : '0.8';
+      });
+      showToast('Standard view restored');
+    }
+  }
+
+  function shareHymn() {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText('Canticle Hymnal - Hymn #104: Amazing Grace (John Newton, 1779)');
+    }
+    showToast('Hymn link copied to clipboard');
+  }
+
+  function navToast(msg) {
+    showToast(msg);
+  }
+
+  function showToast(text) {
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toastMsg');
+    toastMsg.textContent = text;
+    toast.classList.remove('opacity-0');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+    }, 2200);
+  }
+</script></main>
+
+</body></html>
