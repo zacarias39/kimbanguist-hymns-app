@@ -1,10 +1,15 @@
-import { Text, View, StyleSheet } from "react-native";
+import Header from "@/components/Header";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View style={styles.container} >
-      <Text>Hello, World! Zacarias</Text>
+    <View>
+      <Header title="Library" />
+      <View style={styles.container} >
+        <Text className="text-yellow-500">Hello World!</Text>
+      </View>
     </View>
+    
   );
 }
 
