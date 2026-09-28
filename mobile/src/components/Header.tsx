@@ -9,8 +9,7 @@ export default function Header({ title }: any) {
        headerTitle: () => <HeaderCard title={ title } />,
        headerTitleAlign: 'center',
        headerStyle: {
-        //backgroundColor: "#0A1612",
-        backgroundColor: "#FFFFFF",
+        backgroundColor: "#0A1612",
        },
     }} />
   );
