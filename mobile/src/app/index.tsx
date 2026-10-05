@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Index() {
   return (
     <View>
-      <Header title="Library" />
+      <Header title="LIBRARY" />
       <View style={styles.container} >
         <Text className="text-yellow-500">Hello World!</Text>
       </View>
